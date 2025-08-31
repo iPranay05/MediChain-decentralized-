@@ -124,8 +124,8 @@ export default function PatientLogin() {
       // Register patient in blockchain if contract is available
       if (contract) {
         try {
-          // Get signer address using ethers v5 syntax
-          const address = await contract.signer.getAddress();
+          // Get signer address using ethers v6 syntax
+          const address = await contract.runner.getAddress();
           
           // Debug contract interface to see available functions
           console.log('Contract interface:', contract.interface.fragments.map((f: any) => f.name));
