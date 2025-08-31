@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useWeb3 } from '@/context/Web3Context';
 import Layout from '@/components/Layout';
-import { ethers, BigNumber } from 'ethers';
+import { ethers } from 'ethers';
 
 enum AppointmentStatus {
   SCHEDULED = 0,
