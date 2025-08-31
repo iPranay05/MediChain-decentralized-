@@ -1,6 +1,6 @@
-import { ethers } from "hardhat";
+const { ethers } = require("hardhat");
 
-async function main() {
+async function deployInsurance() {
   const InsuranceManager = await ethers.getContractFactory("InsuranceManager");
   const insuranceManager = await InsuranceManager.deploy();
 
@@ -9,7 +9,7 @@ async function main() {
   console.log(`InsuranceManager deployed to ${insuranceManager.address}`);
 }
 
-main().catch((error) => {
+deployInsurance().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });

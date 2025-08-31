@@ -45,7 +45,7 @@ export default function PatientDashboard() {
         // Count active prescriptions (less than 30 days old)
         const now = Math.floor(Date.now() / 1000);
         const thirtyDaysAgo = now - (30 * 24 * 60 * 60);
-        const activePrescriptions = prescriptionList.filter(p => p.timestamp > thirtyDaysAgo);
+        const activePrescriptions = prescriptionList.filter((p:any) => p.timestamp > thirtyDaysAgo);
         setPrescriptionsCount(activePrescriptions.length);
 
         // Fetch appointments

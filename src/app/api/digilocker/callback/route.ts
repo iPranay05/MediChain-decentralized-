@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { auth } from '@clerk/nextjs';
+import { auth } from '@clerk/nextjs/server';
 import { kv } from '@vercel/kv';
 
 const DIGILOCKER_CLIENT_ID = process.env.DIGILOCKER_CLIENT_ID;
@@ -8,7 +8,7 @@ const REDIRECT_URI = `${process.env.NEXT_PUBLIC_APP_URL}/api/digilocker/callback
 
 export async function GET(request: Request) {
   try {
-    const { userId } = auth();
+    const { userId } = await auth();
     if (!userId) {
       throw new Error('User not authenticated');
     }
