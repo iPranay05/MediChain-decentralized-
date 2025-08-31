@@ -1,0 +1,17 @@
+{
+  "name": "MediChain Healthcare",
+  "short_name": "MediChain",
+  "description": "A secure and transparent healthcare records management system built on the Avalanche blockchain.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

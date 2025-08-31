@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: medichain
+    env: node
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NEXT_PUBLIC_CONTRACT_ADDRESS
+        value: 0x3c5C0c4C37ce4bD64Fe23Ba3f1f8d45Cfa861370
+      - key: NEXT_PUBLIC_AVALANCHE_TESTNET_RPC 
+        value: https://api.avax-test.network/ext/bc/C/rpc
+      - key: NODE_ENV
+        value: production
+    nodeVersion: 18
