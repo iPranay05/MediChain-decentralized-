@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
-    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
     "@typechain/ethers-v6": "^0.5.1",
     "@types/leaflet": "^1.9.17",
     "@types/node": "^20",
