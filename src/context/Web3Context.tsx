@@ -61,9 +61,9 @@ export const Web3Provider = ({ children }: { children: ReactNode }) => {
           }
         }
 
-        // Create contract instance using ethers v6
-        const provider = new ethers.BrowserProvider(window.ethereum);
-        const signer = await provider.getSigner();
+        // Create contract instance using ethers v5
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
         const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS;
         
         if (!contractAddress) {

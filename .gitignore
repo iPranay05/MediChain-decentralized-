@@ -34,7 +34,7 @@ next-env.d.ts
 
 # Hardhat files
 cache
-# artifacts - commented out to include compiled contracts for deployment
+artifacts
 
 # IDE
 .idea

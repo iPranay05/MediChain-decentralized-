@@ -25,10 +25,10 @@
     "@vercel/kv": "^3.0.0",
     "bcryptjs": "^3.0.2",
     "clsx": "^2.1.1",
-    "ethers": "^6.14.0",
+    "ethers": "^5.7.2",
     "framer-motion": "^10.16.4",
     "leaflet": "^1.9.4",
-    "next": "14.0.3",
+    "next": "14.0.1",
     "next-auth": "^4.24.11",
     "openai": "^4.90.0",
     "prisma": "^6.15.0",
@@ -42,8 +42,9 @@
     "twilio": "^5.5.1"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-ethers": "^3.0.0",
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@typechain/ethers-v6": "^0.5.1",
     "@types/leaflet": "^1.9.17",
     "@types/node": "^20",
     "@types/react": "^18",
@@ -52,7 +53,6 @@
     "hardhat": "^2.19.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "ts-node": "^10.9.2",
     "typescript": "^5"
   },
   "description": "A secure and transparent healthcare records management system built on the Avalanche blockchain.",

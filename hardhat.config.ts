@@ -1,4 +1,4 @@
-require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-ethers");
 require("dotenv").config({ path: '.env.local' });
 
 // Get private key from environment variable
